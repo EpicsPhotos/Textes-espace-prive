@@ -370,19 +370,25 @@ body.theme-love { background: #ffb6c1; color: #800000; }
 <button aria-label="Pause" onclick="pauseText()" title="Pause">⏸️</button>
 <button aria-label="Arrêter" onclick="stopText()" title="Arrêter">⏹️</button>
 </div>
+
 <div class="format-options" id="format-options-0" style="display:none;">
-<select onchange="setFontFamily(this.value, 0)">
-<option value="Arial">Arial</option>
-<option value="Georgia">Georgia</option>
-<option value="Courier New">Courier</option>
-</select>
-<input max="48" min="10" onchange="setFontSize(this.value, 0)" placeholder="Taille" type="number"/>
-<input onchange="setColor(this.value, 0)" title="Couleur" type="color"/>
-<label><input onchange="toggleBold(this, 0)" type="checkbox"/>Gras</label>
-<label><input onchange="toggleItalic(this, 0)" type="checkbox"/>Italique</label>
-<label><input onchange="toggleUnderline(this, 0)" type="checkbox"/>Souligné</label>
-<button onclick="resetFormat(0)">Défaut</button>
+  <div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; align-items: center;">
+    <select onchange="setFontFamily(this.value, 0)">
+      <option value="Arial">Arial</option>
+      <option value="Georgia">Georgia</option>
+      <option value="Courier New">Courier</option>
+    </select>
+    <input type="number" min="10" max="48" onchange="setFontSize(this.value, 0)" placeholder="Taille" />
+    <input type="color" onchange="setColor(this.value, 0)" title="Couleur" />
+  </div>
+  <div style="margin-top:10px; display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; align-items: center;">
+    <label><input type="checkbox" onchange="toggleBold(this, 0)"> Gras</label>
+    <label><input type="checkbox" onchange="toggleItalic(this, 0)"> Italique</label>
+    <label><input type="checkbox" onchange="toggleUnderline(this, 0)"> Souligné</label>
+    <button onclick="resetFormat(0)" style="margin-left:auto;">Défaut</button>
+  </div>
 </div>
+
 <div class="narration-options" id="narration-options-0" style="display:none;">
 <select id="lang-select-0">
 <option value="fr-FR">Français</option>
@@ -414,19 +420,25 @@ body.theme-love { background: #ffb6c1; color: #800000; }
 <button aria-label="Pause" onclick="pauseText()" title="Pause">⏸️</button>
 <button aria-label="Arrêter" onclick="stopText()" title="Arrêter">⏹️</button>
 </div>
+
 <div class="format-options" id="format-options-1" style="display:none;">
-<select onchange="setFontFamily(this.value, 1)">
-<option value="Arial">Arial</option>
-<option value="Georgia">Georgia</option>
-<option value="Courier New">Courier</option>
-</select>
-<input max="48" min="10" onchange="setFontSize(this.value, 1)" placeholder="Taille" type="number"/>
-<input onchange="setColor(this.value, 1)" title="Couleur" type="color"/>
-<label><input onchange="toggleBold(this, 1)" type="checkbox"/>Gras</label>
-<label><input onchange="toggleItalic(this, 1)" type="checkbox"/>Italique</label>
-<label><input onchange="toggleUnderline(this, 1)" type="checkbox"/>Souligné</label>
-<button onclick="resetFormat(1)">Défaut</button>
+  <div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; align-items: center;">
+    <select onchange="setFontFamily(this.value, 1)">
+      <option value="Arial">Arial</option>
+      <option value="Georgia">Georgia</option>
+      <option value="Courier New">Courier</option>
+    </select>
+    <input type="number" min="10" max="48" onchange="setFontSize(this.value, 1)" placeholder="Taille" />
+    <input type="color" onchange="setColor(this.value, 1)" title="Couleur" />
+  </div>
+  <div style="margin-top:10px; display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; align-items: center;">
+    <label><input type="checkbox" onchange="toggleBold(this, 1)"> Gras</label>
+    <label><input type="checkbox" onchange="toggleItalic(this, 1)"> Italique</label>
+    <label><input type="checkbox" onchange="toggleUnderline(this, 1)"> Souligné</label>
+    <button onclick="resetFormat(1)" style="margin-left:auto;">Défaut</button>
+  </div>
 </div>
+
 <div class="narration-options" id="narration-options-1" style="display:none;">
 <select id="lang-select-1">
 <option value="fr-FR">Français</option>
@@ -458,19 +470,25 @@ body.theme-love { background: #ffb6c1; color: #800000; }
 <button aria-label="Pause" onclick="pauseText()" title="Pause">⏸️</button>
 <button aria-label="Arrêter" onclick="stopText()" title="Arrêter">⏹️</button>
 </div>
+
 <div class="format-options" id="format-options-2" style="display:none;">
-<select onchange="setFontFamily(this.value, 2)">
-<option value="Arial">Arial</option>
-<option value="Georgia">Georgia</option>
-<option value="Courier New">Courier</option>
-</select>
-<input max="48" min="10" onchange="setFontSize(this.value, 2)" placeholder="Taille" type="number"/>
-<input onchange="setColor(this.value, 2)" title="Couleur" type="color"/>
-<label><input onchange="toggleBold(this, 2)" type="checkbox"/>Gras</label>
-<label><input onchange="toggleItalic(this, 2)" type="checkbox"/>Italique</label>
-<label><input onchange="toggleUnderline(this, 2)" type="checkbox"/>Souligné</label>
-<button onclick="resetFormat(2)">Défaut</button>
+  <div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; align-items: center;">
+    <select onchange="setFontFamily(this.value, 2)">
+      <option value="Arial">Arial</option>
+      <option value="Georgia">Georgia</option>
+      <option value="Courier New">Courier</option>
+    </select>
+    <input type="number" min="10" max="48" onchange="setFontSize(this.value, 2)" placeholder="Taille" />
+    <input type="color" onchange="setColor(this.value, 2)" title="Couleur" />
+  </div>
+  <div style="margin-top:10px; display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; align-items: center;">
+    <label><input type="checkbox" onchange="toggleBold(this, 2)"> Gras</label>
+    <label><input type="checkbox" onchange="toggleItalic(this, 2)"> Italique</label>
+    <label><input type="checkbox" onchange="toggleUnderline(this, 2)"> Souligné</label>
+    <button onclick="resetFormat(2)" style="margin-left:auto;">Défaut</button>
+  </div>
 </div>
+
 <div class="narration-options" id="narration-options-2" style="display:none;">
 <select id="lang-select-2">
 <option value="fr-FR">Français</option>
@@ -502,19 +520,25 @@ body.theme-love { background: #ffb6c1; color: #800000; }
 <button aria-label="Pause" onclick="pauseText()" title="Pause">⏸️</button>
 <button aria-label="Arrêter" onclick="stopText()" title="Arrêter">⏹️</button>
 </div>
+
 <div class="format-options" id="format-options-3" style="display:none;">
-<select onchange="setFontFamily(this.value, 3)">
-<option value="Arial">Arial</option>
-<option value="Georgia">Georgia</option>
-<option value="Courier New">Courier</option>
-</select>
-<input max="48" min="10" onchange="setFontSize(this.value, 3)" placeholder="Taille" type="number"/>
-<input onchange="setColor(this.value, 3)" title="Couleur" type="color"/>
-<label><input onchange="toggleBold(this, 3)" type="checkbox"/>Gras</label>
-<label><input onchange="toggleItalic(this, 3)" type="checkbox"/>Italique</label>
-<label><input onchange="toggleUnderline(this, 3)" type="checkbox"/>Souligné</label>
-<button onclick="resetFormat(3)">Défaut</button>
+  <div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; align-items: center;">
+    <select onchange="setFontFamily(this.value, 3)">
+      <option value="Arial">Arial</option>
+      <option value="Georgia">Georgia</option>
+      <option value="Courier New">Courier</option>
+    </select>
+    <input type="number" min="10" max="48" onchange="setFontSize(this.value, 3)" placeholder="Taille" />
+    <input type="color" onchange="setColor(this.value, 3)" title="Couleur" />
+  </div>
+  <div style="margin-top:10px; display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; align-items: center;">
+    <label><input type="checkbox" onchange="toggleBold(this, 3)"> Gras</label>
+    <label><input type="checkbox" onchange="toggleItalic(this, 3)"> Italique</label>
+    <label><input type="checkbox" onchange="toggleUnderline(this, 3)"> Souligné</label>
+    <button onclick="resetFormat(3)" style="margin-left:auto;">Défaut</button>
+  </div>
 </div>
+
 <div class="narration-options" id="narration-options-3" style="display:none;">
 <select id="lang-select-3">
 <option value="fr-FR">Français</option>
@@ -546,19 +570,25 @@ body.theme-love { background: #ffb6c1; color: #800000; }
 <button aria-label="Pause" onclick="pauseText()" title="Pause">⏸️</button>
 <button aria-label="Arrêter" onclick="stopText()" title="Arrêter">⏹️</button>
 </div>
+
 <div class="format-options" id="format-options-4" style="display:none;">
-<select onchange="setFontFamily(this.value, 4)">
-<option value="Arial">Arial</option>
-<option value="Georgia">Georgia</option>
-<option value="Courier New">Courier</option>
-</select>
-<input max="48" min="10" onchange="setFontSize(this.value, 4)" placeholder="Taille" type="number"/>
-<input onchange="setColor(this.value, 4)" title="Couleur" type="color"/>
-<label><input onchange="toggleBold(this, 4)" type="checkbox"/>Gras</label>
-<label><input onchange="toggleItalic(this, 4)" type="checkbox"/>Italique</label>
-<label><input onchange="toggleUnderline(this, 4)" type="checkbox"/>Souligné</label>
-<button onclick="resetFormat(4)">Défaut</button>
+  <div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; align-items: center;">
+    <select onchange="setFontFamily(this.value, 4)">
+      <option value="Arial">Arial</option>
+      <option value="Georgia">Georgia</option>
+      <option value="Courier New">Courier</option>
+    </select>
+    <input type="number" min="10" max="48" onchange="setFontSize(this.value, 4)" placeholder="Taille" />
+    <input type="color" onchange="setColor(this.value, 4)" title="Couleur" />
+  </div>
+  <div style="margin-top:10px; display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; align-items: center;">
+    <label><input type="checkbox" onchange="toggleBold(this, 4)"> Gras</label>
+    <label><input type="checkbox" onchange="toggleItalic(this, 4)"> Italique</label>
+    <label><input type="checkbox" onchange="toggleUnderline(this, 4)"> Souligné</label>
+    <button onclick="resetFormat(4)" style="margin-left:auto;">Défaut</button>
+  </div>
 </div>
+
 <div class="narration-options" id="narration-options-4" style="display:none;">
 <select id="lang-select-4">
 <option value="fr-FR">Français</option>
@@ -590,19 +620,25 @@ body.theme-love { background: #ffb6c1; color: #800000; }
 <button aria-label="Pause" onclick="pauseText()" title="Pause">⏸️</button>
 <button aria-label="Arrêter" onclick="stopText()" title="Arrêter">⏹️</button>
 </div>
+
 <div class="format-options" id="format-options-5" style="display:none;">
-<select onchange="setFontFamily(this.value, 5)">
-<option value="Arial">Arial</option>
-<option value="Georgia">Georgia</option>
-<option value="Courier New">Courier</option>
-</select>
-<input max="48" min="10" onchange="setFontSize(this.value, 5)" placeholder="Taille" type="number"/>
-<input onchange="setColor(this.value, 5)" title="Couleur" type="color"/>
-<label><input onchange="toggleBold(this, 5)" type="checkbox"/>Gras</label>
-<label><input onchange="toggleItalic(this, 5)" type="checkbox"/>Italique</label>
-<label><input onchange="toggleUnderline(this, 5)" type="checkbox"/>Souligné</label>
-<button onclick="resetFormat(5)">Défaut</button>
+  <div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; align-items: center;">
+    <select onchange="setFontFamily(this.value, 5)">
+      <option value="Arial">Arial</option>
+      <option value="Georgia">Georgia</option>
+      <option value="Courier New">Courier</option>
+    </select>
+    <input type="number" min="10" max="48" onchange="setFontSize(this.value, 5)" placeholder="Taille" />
+    <input type="color" onchange="setColor(this.value, 5)" title="Couleur" />
+  </div>
+  <div style="margin-top:10px; display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; align-items: center;">
+    <label><input type="checkbox" onchange="toggleBold(this, 5)"> Gras</label>
+    <label><input type="checkbox" onchange="toggleItalic(this, 5)"> Italique</label>
+    <label><input type="checkbox" onchange="toggleUnderline(this, 5)"> Souligné</label>
+    <button onclick="resetFormat(5)" style="margin-left:auto;">Défaut</button>
+  </div>
 </div>
+
 <div class="narration-options" id="narration-options-5" style="display:none;">
 <select id="lang-select-5">
 <option value="fr-FR">Français</option>
@@ -634,19 +670,25 @@ body.theme-love { background: #ffb6c1; color: #800000; }
 <button aria-label="Pause" onclick="pauseText()" title="Pause">⏸️</button>
 <button aria-label="Arrêter" onclick="stopText()" title="Arrêter">⏹️</button>
 </div>
+
 <div class="format-options" id="format-options-6" style="display:none;">
-<select onchange="setFontFamily(this.value, 6)">
-<option value="Arial">Arial</option>
-<option value="Georgia">Georgia</option>
-<option value="Courier New">Courier</option>
-</select>
-<input max="48" min="10" onchange="setFontSize(this.value, 6)" placeholder="Taille" type="number"/>
-<input onchange="setColor(this.value, 6)" title="Couleur" type="color"/>
-<label><input onchange="toggleBold(this, 6)" type="checkbox"/>Gras</label>
-<label><input onchange="toggleItalic(this, 6)" type="checkbox"/>Italique</label>
-<label><input onchange="toggleUnderline(this, 6)" type="checkbox"/>Souligné</label>
-<button onclick="resetFormat(6)">Défaut</button>
+  <div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; align-items: center;">
+    <select onchange="setFontFamily(this.value, 6)">
+      <option value="Arial">Arial</option>
+      <option value="Georgia">Georgia</option>
+      <option value="Courier New">Courier</option>
+    </select>
+    <input type="number" min="10" max="48" onchange="setFontSize(this.value, 6)" placeholder="Taille" />
+    <input type="color" onchange="setColor(this.value, 6)" title="Couleur" />
+  </div>
+  <div style="margin-top:10px; display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; align-items: center;">
+    <label><input type="checkbox" onchange="toggleBold(this, 6)"> Gras</label>
+    <label><input type="checkbox" onchange="toggleItalic(this, 6)"> Italique</label>
+    <label><input type="checkbox" onchange="toggleUnderline(this, 6)"> Souligné</label>
+    <button onclick="resetFormat(6)" style="margin-left:auto;">Défaut</button>
+  </div>
 </div>
+
 <div class="narration-options" id="narration-options-6" style="display:none;">
 <select id="lang-select-6">
 <option value="fr-FR">Français</option>
@@ -678,19 +720,25 @@ body.theme-love { background: #ffb6c1; color: #800000; }
 <button aria-label="Pause" onclick="pauseText()" title="Pause">⏸️</button>
 <button aria-label="Arrêter" onclick="stopText()" title="Arrêter">⏹️</button>
 </div>
+
 <div class="format-options" id="format-options-7" style="display:none;">
-<select onchange="setFontFamily(this.value, 7)">
-<option value="Arial">Arial</option>
-<option value="Georgia">Georgia</option>
-<option value="Courier New">Courier</option>
-</select>
-<input max="48" min="10" onchange="setFontSize(this.value, 7)" placeholder="Taille" type="number"/>
-<input onchange="setColor(this.value, 7)" title="Couleur" type="color"/>
-<label><input onchange="toggleBold(this, 7)" type="checkbox"/>Gras</label>
-<label><input onchange="toggleItalic(this, 7)" type="checkbox"/>Italique</label>
-<label><input onchange="toggleUnderline(this, 7)" type="checkbox"/>Souligné</label>
-<button onclick="resetFormat(7)">Défaut</button>
+  <div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; align-items: center;">
+    <select onchange="setFontFamily(this.value, 7)">
+      <option value="Arial">Arial</option>
+      <option value="Georgia">Georgia</option>
+      <option value="Courier New">Courier</option>
+    </select>
+    <input type="number" min="10" max="48" onchange="setFontSize(this.value, 7)" placeholder="Taille" />
+    <input type="color" onchange="setColor(this.value, 7)" title="Couleur" />
+  </div>
+  <div style="margin-top:10px; display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; align-items: center;">
+    <label><input type="checkbox" onchange="toggleBold(this, 7)"> Gras</label>
+    <label><input type="checkbox" onchange="toggleItalic(this, 7)"> Italique</label>
+    <label><input type="checkbox" onchange="toggleUnderline(this, 7)"> Souligné</label>
+    <button onclick="resetFormat(7)" style="margin-left:auto;">Défaut</button>
+  </div>
 </div>
+
 <div class="narration-options" id="narration-options-7" style="display:none;">
 <select id="lang-select-7">
 <option value="fr-FR">Français</option>
@@ -722,19 +770,25 @@ body.theme-love { background: #ffb6c1; color: #800000; }
 <button aria-label="Pause" onclick="pauseText()" title="Pause">⏸️</button>
 <button aria-label="Arrêter" onclick="stopText()" title="Arrêter">⏹️</button>
 </div>
+
 <div class="format-options" id="format-options-8" style="display:none;">
-<select onchange="setFontFamily(this.value, 8)">
-<option value="Arial">Arial</option>
-<option value="Georgia">Georgia</option>
-<option value="Courier New">Courier</option>
-</select>
-<input max="48" min="10" onchange="setFontSize(this.value, 8)" placeholder="Taille" type="number"/>
-<input onchange="setColor(this.value, 8)" title="Couleur" type="color"/>
-<label><input onchange="toggleBold(this, 8)" type="checkbox"/>Gras</label>
-<label><input onchange="toggleItalic(this, 8)" type="checkbox"/>Italique</label>
-<label><input onchange="toggleUnderline(this, 8)" type="checkbox"/>Souligné</label>
-<button onclick="resetFormat(8)">Défaut</button>
+  <div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; align-items: center;">
+    <select onchange="setFontFamily(this.value, 8)">
+      <option value="Arial">Arial</option>
+      <option value="Georgia">Georgia</option>
+      <option value="Courier New">Courier</option>
+    </select>
+    <input type="number" min="10" max="48" onchange="setFontSize(this.value, 8)" placeholder="Taille" />
+    <input type="color" onchange="setColor(this.value, 8)" title="Couleur" />
+  </div>
+  <div style="margin-top:10px; display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; align-items: center;">
+    <label><input type="checkbox" onchange="toggleBold(this, 8)"> Gras</label>
+    <label><input type="checkbox" onchange="toggleItalic(this, 8)"> Italique</label>
+    <label><input type="checkbox" onchange="toggleUnderline(this, 8)"> Souligné</label>
+    <button onclick="resetFormat(8)" style="margin-left:auto;">Défaut</button>
+  </div>
 </div>
+
 <div class="narration-options" id="narration-options-8" style="display:none;">
 <select id="lang-select-8">
 <option value="fr-FR">Français</option>
@@ -766,19 +820,25 @@ body.theme-love { background: #ffb6c1; color: #800000; }
 <button aria-label="Pause" onclick="pauseText()" title="Pause">⏸️</button>
 <button aria-label="Arrêter" onclick="stopText()" title="Arrêter">⏹️</button>
 </div>
+
 <div class="format-options" id="format-options-9" style="display:none;">
-<select onchange="setFontFamily(this.value, 9)">
-<option value="Arial">Arial</option>
-<option value="Georgia">Georgia</option>
-<option value="Courier New">Courier</option>
-</select>
-<input max="48" min="10" onchange="setFontSize(this.value, 9)" placeholder="Taille" type="number"/>
-<input onchange="setColor(this.value, 9)" title="Couleur" type="color"/>
-<label><input onchange="toggleBold(this, 9)" type="checkbox"/>Gras</label>
-<label><input onchange="toggleItalic(this, 9)" type="checkbox"/>Italique</label>
-<label><input onchange="toggleUnderline(this, 9)" type="checkbox"/>Souligné</label>
-<button onclick="resetFormat(9)">Défaut</button>
+  <div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; align-items: center;">
+    <select onchange="setFontFamily(this.value, 9)">
+      <option value="Arial">Arial</option>
+      <option value="Georgia">Georgia</option>
+      <option value="Courier New">Courier</option>
+    </select>
+    <input type="number" min="10" max="48" onchange="setFontSize(this.value, 9)" placeholder="Taille" />
+    <input type="color" onchange="setColor(this.value, 9)" title="Couleur" />
+  </div>
+  <div style="margin-top:10px; display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; align-items: center;">
+    <label><input type="checkbox" onchange="toggleBold(this, 9)"> Gras</label>
+    <label><input type="checkbox" onchange="toggleItalic(this, 9)"> Italique</label>
+    <label><input type="checkbox" onchange="toggleUnderline(this, 9)"> Souligné</label>
+    <button onclick="resetFormat(9)" style="margin-left:auto;">Défaut</button>
+  </div>
 </div>
+
 <div class="narration-options" id="narration-options-9" style="display:none;">
 <select id="lang-select-9">
 <option value="fr-FR">Français</option>
@@ -810,19 +870,25 @@ body.theme-love { background: #ffb6c1; color: #800000; }
 <button aria-label="Pause" onclick="pauseText()" title="Pause">⏸️</button>
 <button aria-label="Arrêter" onclick="stopText()" title="Arrêter">⏹️</button>
 </div>
+
 <div class="format-options" id="format-options-10" style="display:none;">
-<select onchange="setFontFamily(this.value, 10)">
-<option value="Arial">Arial</option>
-<option value="Georgia">Georgia</option>
-<option value="Courier New">Courier</option>
-</select>
-<input max="48" min="10" onchange="setFontSize(this.value, 10)" placeholder="Taille" type="number"/>
-<input onchange="setColor(this.value, 10)" title="Couleur" type="color"/>
-<label><input onchange="toggleBold(this, 10)" type="checkbox"/>Gras</label>
-<label><input onchange="toggleItalic(this, 10)" type="checkbox"/>Italique</label>
-<label><input onchange="toggleUnderline(this, 10)" type="checkbox"/>Souligné</label>
-<button onclick="resetFormat(10)">Défaut</button>
+  <div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; align-items: center;">
+    <select onchange="setFontFamily(this.value, 10)">
+      <option value="Arial">Arial</option>
+      <option value="Georgia">Georgia</option>
+      <option value="Courier New">Courier</option>
+    </select>
+    <input type="number" min="10" max="48" onchange="setFontSize(this.value, 10)" placeholder="Taille" />
+    <input type="color" onchange="setColor(this.value, 10)" title="Couleur" />
+  </div>
+  <div style="margin-top:10px; display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; align-items: center;">
+    <label><input type="checkbox" onchange="toggleBold(this, 10)"> Gras</label>
+    <label><input type="checkbox" onchange="toggleItalic(this, 10)"> Italique</label>
+    <label><input type="checkbox" onchange="toggleUnderline(this, 10)"> Souligné</label>
+    <button onclick="resetFormat(10)" style="margin-left:auto;">Défaut</button>
+  </div>
 </div>
+
 <div class="narration-options" id="narration-options-10" style="display:none;">
 <select id="lang-select-10">
 <option value="fr-FR">Français</option>
@@ -840,7 +906,7 @@ const totalModals = 11;
 let userStylePrefs = {
   font: "Arial",
   size: "16",
-  color: "#ffffff",
+  color: "#000000",
   bold: false,
   italic: false,
   underline: false
